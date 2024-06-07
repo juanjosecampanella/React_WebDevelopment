@@ -1,42 +1,215 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+header h1 {
+  font-size: 2em;
+  color: #007bff;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+nav ul li {
+  display: inline;
 }
 
-.card {
-  padding: 2em;
+nav ul li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 4px;
 }
 
-.read-the-docs {
-  color: #888;
+nav ul li a:hover {
+  text-decoration: underline;
+  background-color: #f0f0f0;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+ul li span {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+ul li .student-info {
+  display: flex;
+  gap: 10px; 
+  align-items: center;
+}
+
+ul li .student-info span {
+  margin-right: 10px; 
+}
+ul li .actions {
+  display: flex;
+  gap: 10px; 
+}
+
+ul li .actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+ul li .actions button.edit {
+  background-color: #007bff;
+  color: white;
+}
+
+ul li .actions button.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+ul li .actions button:hover {
+  opacity: 0.8; 
+}
+
+.add-grade-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-grade-btn:hover {
+  background-color: #218838;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+form .form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form .form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.grade-item {
+  margin-bottom: 10px;
+}
+
+.grade-item label {
+  font-weight: bold;
+}
+
+.grade-item input {
+  width: 100px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.grade-item button {
+  margin-top: 5px;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.grade-item button:hover {
+  background-color: #0056b3;
 }
